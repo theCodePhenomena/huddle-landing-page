@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+$primary: #ff52bf;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    font-family: "Poppins", sans-serif;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+
+    &__primary {
+        background-color: $primary;
+        color: white;
+    }
+
+    &__secondary {
+        background-color: #fff;
+    }
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+
+    .header {
+        padding: 4.5rem 0;
+        background-color: #ebfbff;
+        background-image: url(../images/header-background-mobile.svg);
+        background-size: cover;
+        background-position: center center;
+
+        .container {
+            padding: 0 2rem;
+
+            .nav {
+                margin-bottom: 4.5rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &--logo {
+                    width: 12rem;
+                }
+
+                &--btn {
+                    font-size: 1.125rem;
+                    padding: .7rem 1.75rem;
+                }
+            }
+        }
+
+        &--content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &--description {
+            text-align: center;
+            margin-bottom: 6.1875rem;
+
+            h1 {
+                font-family: "Poppins", sans-serif;
+                font-size: 2.25rem;
+            }
+
+            p {
+                font-family: "Open Sans", sans-serif;
+                color: #00252e;
+                font-size: 1.8rem;
+                margin: 4rem 0
+            }
+        }
+
+        &--btn {
+            padding: 1.5rem 6rem;            
+        }
+
+        &--img {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
