@@ -149,6 +149,7 @@ body .community {
 }
 
 body .community .container {
+  background-color: white;
   margin: 0 6.25rem;
   padding: 4.5rem 0;
   border-radius: 1.6875rem;
@@ -165,6 +166,11 @@ body .community .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: -5.625rem;
+  max-width: 50rem;
+  text-align: center;
 }
 
 body .community--title {
@@ -175,5 +181,10 @@ body .community--title {
 
 body .community--btn {
   padding: 1.5rem 6rem;
+}
+
+body .footer {
+  padding: 15.75rem 0 3.375rem;
+  background-color: #00252e;
 }
 /*# sourceMappingURL=main.css.map */

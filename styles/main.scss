@@ -137,6 +137,7 @@ body {
         padding: 0 2rem;
 
         .container {
+            background-color: white;
             margin: 0 6.25rem;
             padding: 4.5rem 0;
             border-radius: 1.6875rem;
@@ -144,7 +145,12 @@ body {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: center;   
+            position: relative;         
+            margin: 0 auto;
+            margin-bottom: -5.625rem;
+            max-width: 50rem;
+            text-align: center;
         }
 
         &--title {
@@ -156,5 +162,10 @@ body {
         &--btn {
             padding: 1.5rem 6rem;
         }
+    }
+
+    .footer {
+        padding: 15.75rem 0 3.375rem;
+        background-color: #00252e;
     }
 }
