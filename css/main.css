@@ -81,12 +81,12 @@ body .header--description {
   margin-bottom: 6.1875rem;
 }
 
-body .header--description h1 {
+body .header--title {
   font-family: "Poppins", sans-serif;
   font-size: 2.25rem;
 }
 
-body .header--description p {
+body .header--paragraph {
   font-family: "Open Sans", sans-serif;
   color: #00252e;
   font-size: 1.8rem;
@@ -103,5 +103,44 @@ body .header--img {
 
 body .header--img img {
   width: 100%;
+}
+
+body .main {
+  padding: 4.5rem 0;
+}
+
+body .main .container {
+  padding: 0 2rem;
+}
+
+body .main .container .card {
+  margin: 4.5rem 0;
+  padding: 5.625rem 4.5rem 4.5rem;
+  border-radius: 1.6875rem;
+  border: none;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+body .main .container .card--img {
+  width: 100%;
+}
+
+body .main .container .card--img img {
+  width: 100%;
+}
+
+body .main .container .card--title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.25rem;
+  margin: 7rem 0 3.5rem;
+}
+
+body .main .container .card--paragraph {
+  font-family: "Open Sans", sans-serif;
+  color: #808d99;
+  font-size: 1.8rem;
+  margin: 4rem 0;
 }
 /*# sourceMappingURL=main.css.map */
