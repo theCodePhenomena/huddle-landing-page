@@ -41,6 +41,12 @@ body .header .container {
   padding: 0 2rem;
 }
 
+@media (min-width: 768px) {
+  body .header .container {
+    padding: 0 8rem;
+  }
+}
+
 body .header .container .nav {
   margin-bottom: 4.5rem;
   display: -webkit-box;
@@ -113,6 +119,12 @@ body .main .container {
   padding: 0 2rem;
 }
 
+@media (min-width: 768px) {
+  body .main .container {
+    padding: 0 8rem;
+  }
+}
+
 body .main .container .card {
   margin: 4.5rem 0;
   padding: 5.625rem 4.5rem 4.5rem;
@@ -146,6 +158,12 @@ body .main .container .card--paragraph {
 
 body .community {
   padding: 0 2rem;
+}
+
+@media (min-width: 768px) {
+  body .community {
+    padding: 0 8rem;
+  }
 }
 
 body .community .container {
@@ -193,6 +211,12 @@ body .footer {
 body .footer .container {
   padding: 0 2rem;
   color: white;
+}
+
+@media (min-width: 768px) {
+  body .footer .container {
+    padding: 0 8rem;
+  }
 }
 
 body .footer--logo {
