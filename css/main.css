@@ -67,6 +67,12 @@ body .header .container {
   }
 }
 
+@media (min-width: 1920px) {
+  body .header .container {
+    padding: 0 calc(50vw - 880px);
+  }
+}
+
 body .header .container .nav {
   margin-bottom: 4.5rem;
   display: -webkit-box;
@@ -222,6 +228,12 @@ body .main .container {
   }
 }
 
+@media (min-width: 1920px) {
+  body .main .container {
+    padding: 0 calc(50vw - 880px);
+  }
+}
+
 body .main .container .card {
   margin: 4.5rem 0;
   padding: 5.625rem 4.5rem 4.5rem;
@@ -327,6 +339,12 @@ body .community {
   }
 }
 
+@media (min-width: 1920px) {
+  body .community {
+    padding: 0 calc(50vw - 880px);
+  }
+}
+
 body .community .container {
   background-color: white;
   margin: 0 6.25rem;
@@ -383,6 +401,12 @@ body .footer .container {
 @media (min-width: 768px) {
   body .footer .container {
     padding: 0 8rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  body .footer .container {
+    padding: 0 calc(50vw - 880px);
   }
 }
 

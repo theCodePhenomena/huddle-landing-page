@@ -6,8 +6,15 @@ $primary: #ff52bf;
 $mobile-padding: 2rem;
 $tablet-padding: 8rem;
 
+$wide-desktop: 1920px;
 $desktop: 1024px;
 $tablet: 768px;
+
+@mixin wide-desktop {
+  @media (min-width: #{$wide-desktop}) {
+    @content;
+  }
+}
 
 @mixin desktop {
   @media (min-width: #{$desktop}) {
@@ -75,6 +82,10 @@ body {
             
             @include tablet() {
                 padding: 0 $tablet-padding;
+            }
+
+            @include wide-desktop() {
+                padding: 0 calc(50vw - 880px);
             }
 
             .nav {
@@ -188,6 +199,10 @@ body {
                 padding: 0 $tablet-padding;
             }
 
+            @include wide-desktop() {
+                padding: 0 calc(50vw - 880px);
+            }
+
             .card {
                 margin: 4.5rem 0;
                 padding: 5.625rem 4.5rem 4.5rem;
@@ -270,6 +285,10 @@ body {
             padding: 0 $tablet-padding;
         }
 
+        @include wide-desktop() {
+            padding: 0 calc(50vw - 880px);
+        }
+
         .container {
             background-color: white;
             margin: 0 6.25rem;
@@ -314,6 +333,10 @@ body {
             
             @include tablet() {
                 padding: 0 $tablet-padding;
+            }
+
+            @include wide-desktop() {
+                padding: 0 calc(50vw - 880px);
             }
         }
 
