@@ -27,12 +27,17 @@ $tablet: 768px;
     box-sizing: border-box;
 }
 
+img {
+    user-select: none;
+}
+
 .btn {
     font-family: "Poppins", sans-serif;
     border-radius: 50px;
     border: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    user-select: none;
 
     &__primary {
         background-color: $primary;
@@ -41,6 +46,10 @@ $tablet: 768px;
 
     &__secondary {
         background-color: #fff;
+    }
+
+    &:focus {
+        outline: 0;
     }
 }
 
@@ -103,11 +112,21 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            @include desktop() {
+                flex-direction: row;
+            }
         }
 
         &--description {
             text-align: center;
             margin-bottom: 6.1875rem;
+
+            @include desktop() {
+                flex: .45;
+                padding-right: 80px;
+                text-align: left;
+            }
         }
 
         &--title {
@@ -119,6 +138,7 @@ body {
             }
 
             @include desktop() {
+                font-size: 3.1rem;
             }
         }
 
@@ -133,6 +153,7 @@ body {
             }
 
             @include desktop() {
+                font-size: 2.5rem;
             }
         }
 
@@ -142,6 +163,10 @@ body {
 
         &--img {
             width: 100%;
+
+            @include desktop() {
+                flex: .55;
+            }
 
             img {
                 width: 100%;
@@ -167,8 +192,35 @@ body {
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
                 text-align: center;
 
+                @include desktop() {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    text-align: left;
+
+                    &:nth-of-type(2) {
+                        flex-direction: row;
+
+                        .card--content {
+                            padding-left: 16rem;
+                            padding-right: unset;
+                        }
+                    }
+                }
+
+                &--content {
+
+                    @include desktop() {
+                        padding-right: 16rem;
+                        flex: .6;
+                    }
+                }
+
                 &--img {
                     width: 100%;
+                    
+                    @include desktop() {
+                        flex: .4;
+                    }
 
                     img {
                         width: 100%;
@@ -185,6 +237,7 @@ body {
                     }
         
                     @include desktop() {
+                        font-size: 3.2rem;
                     }
                 }
         
@@ -199,6 +252,7 @@ body {
                     }
         
                     @include desktop() {
+                        font-size: 2.2rem;
                     }
                 }
             }
@@ -227,6 +281,10 @@ body {
             margin-bottom: -5.625rem;
             max-width: 50rem;
             text-align: center;
+
+            @include desktop() {
+                max-width: 80rem;
+            }
         }
 
         &--title {
