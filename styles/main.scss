@@ -6,11 +6,11 @@ $primary: #ff52bf;
 $mobile-padding: 2rem;
 $tablet-padding: 8rem;
 
-$laptop: 1024px;
+$desktop: 1024px;
 $tablet: 768px;
 
 @mixin desktop {
-  @media (min-width: #{$laptop}) {
+  @media (min-width: #{$desktop}) {
     @content;
   }
 }
