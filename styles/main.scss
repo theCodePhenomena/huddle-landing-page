@@ -51,6 +51,10 @@ img {
     &:focus {
         outline: 0;
     }
+
+    &:hover {
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    }
 }
 
 html {
