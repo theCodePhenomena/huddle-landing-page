@@ -77,6 +77,10 @@ body {
         background-size: cover;
         background-position: center center;
 
+        @include desktop() {
+            background-image: url(../images/header-background-desktop.svg);
+        }
+
         .container {
             padding: 0 $mobile-padding;
             

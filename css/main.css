@@ -57,6 +57,12 @@ body .header {
   background-position: center center;
 }
 
+@media (min-width: 1024px) {
+  body .header {
+    background-image: url(../images/header-background-desktop.svg);
+  }
+}
+
 body .header .container {
   padding: 0 2rem;
 }
